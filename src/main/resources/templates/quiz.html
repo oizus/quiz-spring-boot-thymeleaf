@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/quiz.css}">
+    <title>Document</title>
+</head>
+
+<div class="containerSmart quiz">
+    <h1>Quiz Tesouro Direto</h1>
+    <form action="resultado" method="post" class="form" th:object="${tForm}">
+        <div class="pergunta" th:each="perg, i: ${tForm.perguntas}">
+            <p th:text="${perg.titulo}"></p>
+            
+            <div class="optionA">
+                <input type="radio" th:name="|perguntas[${i.index}].escolha|" th:value="1">
+                <span th:text="${perg.opcaoA}"></span>
+            </div>
+            <div class="optionB">
+                <input type="radio" th:name="|perguntas[${i.index}].escolha|" th:value="2">
+                <span th:text="${perg.opcaoB}"></span>
+            </div>
+            <div class="optionC">
+                <input type="radio" th:name="|perguntas[${i.index}].escolha|" th:value="3">
+                <span th:text="${perg.opcaoC}"></span>
+            </div>
+            <input type="hidden" th:name="|perguntas[${i.index}].id|" th:value="${perg.id}" />
+            <input type="hidden" th:name="|perguntas[${i.index}].titulo|" th:value="${perg.titulo}" />
+            <input type="hidden" th:name="|perguntas[${i.index}].resposta|" th:value="${perg.resposta}" />
+            <input type="hidden" th:name="|perguntas[${i.index}].idUsuario|" th:value="${param.id}"/>
+        </div>
+        <button type="submit">Enviar Resposta</button>
+    </form>
+</div>
+
+</html>
+
+

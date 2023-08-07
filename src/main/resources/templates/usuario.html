@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  th:href="@{/css/usuario.css}">
+    <title>Usuario</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a th:href="@{/home}" class="logo"><span class="cifrao">$</span><span class="p">implifica</span><span
+                    class="ed">Educação Financeira</span></a>
+            <ul class="nav-links">                
+                <li class="nav-item"><a th:href="@{/usuario}">Quiz</a></li>
+                <li class="nav-item"><a th:href="@{/ranking}">Ranking</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="containerSmart usuario">
+            <a  th:href="@{/home}" class="logoU"><span class="cifraoU">$</span><span class="pU">implifica</span><span
+                    class="edU">Educação Financeira</span></a>
+            <p class="msg">Simplifica Quiz</p>
+            <form action="usuario" method="post" class="form" th:object="${usuariosimples}">                               
+                <input type="text" name="" id="" placeholder="Insira seu nome" th:field="*{nome}"> 
+                <p th:text="${#request.getParameter('tipo')}"></p>                         
+                <button type="submit">Iniciar quiz</button>
+            </form>            
+        </div>
+    </main>
+    <footer class="footer">
+        <small>Copyright &copy; Your Website</small>
+    </footer>
+</body>
+</html>

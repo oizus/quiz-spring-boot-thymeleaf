@@ -1,0 +1,514 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.containerSmart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*-----------------------------------------------HEADER-----------------------------------------------*/
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 5px solid black;
+    padding-bottom: 7px;
+}
+
+.navbar {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+.nav-item:hover a {
+    color: #DEBE5F;
+}
+
+
+.nav-links {
+    display: flex;
+}
+
+.cifrao {
+    /*float: left; */
+    /*position: relative; */
+    font-size: 40px;
+    color: black;
+}
+
+.p {
+    font-size: 30px;
+    color: black;
+}
+
+.ed {
+    font-size: 12px;
+    display: block;
+    margin-left: 20px;
+    color: black;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo:hover .p {
+    color: #DEBE5F;
+    
+}
+
+.logo:hover .ed {
+    color: #DEBE5F;
+}
+
+.logo:hover .cifrao {
+    color: #DEBE5F;
+}
+
+.vl {
+    border-left: 1px solid black;
+    height: 30px;
+    margin: auto;
+}
+
+
+
+/*------------------------------------------------MAIN------------------------------------------------*/
+
+/*---------------------------Section 1 (Entrada)------------------------------*/
+
+@media screen and (max-width: 500px) {
+    .txtInfo {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .txtInfo p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .a {
+        font-size: 380px;
+        text-align: center;
+        display: block;
+    }
+
+    .b {
+        margin-top: -350px;
+        margin-right: 250px;
+    }
+
+    .c {
+        margin-left: 250px;
+        margin-top: -10px;
+        /* mmargin-top: 10px;; sem dinheiro*/
+    }
+
+    .spanEntrada1 {
+        display: block;
+    }
+
+    .d {
+        margin-top: 15px;
+        margin-left: 160px;
+
+    }
+
+    .e {
+        margin-top: 25px;
+        margin-right: 190px;
+
+    }
+
+    .spanEntrada3 {
+        display: block;
+        margin-right: 5px;
+    }
+
+
+    .f {
+        margin-top: 5px;
+        margin-left: 275px;
+    }
+
+    .g {
+        margin-top: -1px;
+        margin-right: 240px;
+        /* mmargin-top: 10px;; sem dinheiro*/
+    }
+
+    .h {
+        margin-top: 10px;
+        margin-left: 200px;
+    }
+
+    .spanEntrada4 {
+        display: block;
+    }
+}
+
+/*-------------------Section 2 (Apresentação do produtos)--------------------*/
+
+.msg {
+    border: 5px solid black;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.card {
+    margin-top: 40px;
+}
+
+.card1 {
+    text-align: center;
+    margin-top: 15px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 65%;
+    height: 100%;
+}
+
+.card1 h4 {
+    margin-top: 10px;
+    font-size: 17.5px;
+}
+
+.card1 p {
+    margin-top: 10px;  
+    margin-bottom: 10px;  
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+
+.divCard1 {
+    width: 270px;
+    height: 200px;
+    border: 3px solid black;
+    text-align: center;
+    line-height: 200px;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px 5px 0 0;
+
+}
+
+.card2 {
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 65%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.card2 h3 {
+    margin-top: 10px;
+}
+
+.card2 p {
+    margin-top: 10px;
+    margin-bottom: 10px;  
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.div1Card2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 270px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 5px 5px 0 0;
+}
+
+.div2Card2 {
+    width: 200px;
+    height: 100px;
+    font-size: 80px;
+    border: 6px solid black;
+    text-align: center;
+}
+
+
+
+.card3 {
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 65%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.card3 h3 {
+    margin-top: 10px;
+}
+
+.card3 p {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin-left: 30px;
+    margin-right: 30px;    
+}
+
+
+.divCard3 {
+    font-size: 100px;
+    font-weight: bold;
+    width: 270px;
+    height: 200px;
+    border: 3px solid black;
+    text-align: center;
+    line-height: 170px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card4 {
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 65%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.card4 h3 {
+    margin-top: 10px;
+}
+
+.card4 p {
+    margin-top: 10px;
+    margin-bottom: 10px;      
+}
+
+
+.divCard4 {
+    font-size: 150px;
+    font-weight: bold;
+    width: 270px;
+    height: 200px;
+    border: 3px solid black;
+    text-align: center;
+    line-height: 170px;
+    border-radius: 5px 5px 0 0;
+}
+
+/*-----------------------------------------------FOOTER-----------------------------------------------*/
+
+.footer {
+    margin-top: 50px;
+    border-top: 5px solid black;
+    color: black;
+    padding: 25px;
+    text-align: center;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------Resolução para telas acima de 1000px-----------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+@media screen and (min-width: 1000px) {
+    .containerPc {
+        flex-direction: row;
+        margin: auto;
+    }
+
+    /*-----------------------------------------------HEADER-----------------------------------------------*/
+
+    .navbar {
+        width: 1000px;
+    }
+
+    .nav-item a {
+        padding: 10px 15px;
+    }
+
+    /*------------------------------------------MAIN ------------------------------------------*/
+
+    /*---------------------------Section 1 (Entrada)------------------------------*/
+    .txtInfo {
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .txtInfo p {
+        text-align: center;
+        font-size: 28px;
+        line-height: 1.6;
+    }
+
+    .a {
+        font-size: 400px;
+        text-align: center;
+        display: block;
+    }
+
+    .b {
+        margin-top: -370px;
+        margin-right: 430px;
+        /*margin-right: 340px; sem dinheiro*/
+    }
+
+    .c {
+        margin-left: 460px;
+    }
+
+    .d {
+        margin-left: 220px;
+    }
+
+    .e {
+        margin-right: 490px;
+    }
+
+    .f {
+        margin-left: 340px;
+    }
+
+    .g {
+        margin-top: 4px;
+        margin-right: 375px;
+        /*margin-right: 280px; sem dinheiro*/
+    }
+
+    .h {
+        margin-left: 540px;
+    }
+
+
+    /*-------------------Section 2 (Apresentação do produtos)--------------------*/
+
+    .card {
+        width: 1200px;
+        margin-top: 50px;
+        height: 350px;
+        margin-bottom: 50px;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        width: 25%;
+        margin: 15px;
+    }
+
+    .card1 {
+        transition: 0.3s;
+        margin-top: 0%;
+    }
+
+    .card1:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+
+    .card1 h4 {
+        margin-top: 20px;
+        font-size: 17.5px;
+    }
+
+    .card1 p {
+        margin-top: 20px;        
+    }
+
+    .card2 {
+        transition: 0.3s;
+        margin-top: 0%;
+    }
+
+    .card2:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card2 h3 {
+        margin-top: 20px;
+    }
+
+    .card2 p {
+        margin-top: 20px;
+    }
+
+    .span1Card2 {
+        width: 280px;
+    }
+
+    .card3 {
+        transition: 0.3s;
+        margin-top: 0%;
+    }
+
+    .card3:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card3 h3 {
+        margin-top: 20px;
+    }
+
+    .card3 p {
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .card4 {
+        transition: 0.3s;
+        margin-top: 0%;
+    }
+
+    .card4:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card4 h3 {
+        margin-top: 20px;
+    }
+
+    .card4 p {
+        margin-top: 20px;
+    }
+
+    /*----------------------------------------------FOOTER----------------------------------------------*/
+
+    .footer {
+        margin-top: 0%;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/resultado.css}">
+    <title>Resultado</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a th:href="@{/home}" class="logo"><span class="cifrao">$</span><span class="p">implifica</span><span
+                    class="ed">Educação Financeira</span></a>
+            <ul class="nav-links">
+                <li class="nav-item"><a th:href="@{/usuario}">Quiz</a></li>
+                <li class="nav-item"><a th:href="@{/ranking}">Ranking</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="containerSmart container">
+            <div class="resultado">
+                <a th:href="@{/home}" class="logoR"><span class="cifraoR">$</span><span class="pR">implifica</span><span
+                        class="edR">Educação Financeira</span></a>
+                <h1>Sua pontuação</h1>
+                <div class="nome">
+                    <p>Nome do participante</p>
+                    <p th:text="${resultadoUsuario.nome}" class="dados"></p>
+                </div>
+
+                <div class="corretas">
+                    <p>Total de respostas corretas</p>
+                    <p th:text="${resultadoUsuario.totalCorretas}" class="dados"></p>
+                </div>
+
+                <div class="erradas">
+                    <p>Total de respostas erradas</p>
+                    <p  th:text="${5 - resultadoUsuario.totalCorretas}"class="dados"></p>
+                </div>
+
+                <div>
+                    <button type="button" th:onclick="window.location.href='/ranking'">Exibir ranking de pontuação</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <small>Copyright &copy; Your Website</small>
+    </footer>
+</body>
+
+</html>
+
+<!--
+
+ <div class="resultado">
+                <a th:href="@{/home}" class="logoR"><span class="cifraoR">$</span><span class="pR">implifica</span><span
+                        class="edR">Educação Financeira</span></a>
+                <h1>Sua pontuação</h1>
+                <div class="nome">
+                    <p>Nome do participante:&nbsp;&nbsp;</p>
+                    <p th:if="${resultado}" th:text="${resultado.usuario}" class="dados"></p>
+                </div>
+
+                <div class="corretas">
+                    <p>Total de respostas corretas:&nbsp;&nbsp;</p>
+                    <p th:if="${resultado}" th:text="${resultado.totalCorretas}" class="dados"></p>
+                </div>
+
+                <div class="erradas">
+                    <p>Total de respostas erradas:&nbsp;&nbsp;</p>
+                    <p th:if="${resultado}" th:text="5 - ${resultado.totalCorretas}" class="dados"></p>
+                </div>
+
+                <div>
+                    <button type="button" th:onclick="window.location.href='/ranking'">Exibir ranking de pontuação</button>
+                </div>
+            </div>
+
+
+
+
+-->

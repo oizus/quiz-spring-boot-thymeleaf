@@ -1,0 +1,220 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.containerSmart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*-----------------------------------------------HEADER-----------------------------------------------*/
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 5px solid black;
+    padding-bottom: 7px;
+}
+
+.navbar {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+.nav-item:hover a {
+    color: #DEBE5F;
+}
+
+
+.nav-links {
+    display: flex;
+}
+
+.cifrao {
+    /*float: left; */
+    /*position: relative; */
+    font-size: 40px;
+    color: black;
+}
+
+.p {
+    font-size: 30px;
+    color: black;
+}
+
+.ed {
+    font-size: 12px;
+    display: block;
+    margin-left: 20px;
+    color: black;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo:hover .p {
+    color: #DEBE5F;
+
+}
+
+.logo:hover .ed {
+    color: #DEBE5F;
+}
+
+.logo:hover .cifrao {
+    color: #DEBE5F;
+}
+
+.vl {
+    border-left: 1px solid black;
+    height: 30px;
+    margin: auto;
+}
+
+
+/*------------------------------------------------MAIN------------------------------------------------*/
+
+
+.container {
+    width: 400px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid black;
+    border-radius: 10px;
+    text-align: center;    
+}
+
+.resultado{
+    padding: 10px;
+}
+
+.resultado div{
+    margin: 15px;
+}
+
+.cifraoR {
+    font-size: 40px;
+    color: black;   
+}
+
+.pR {
+    font-size: 30px;
+    color: black;
+}
+
+.edR {
+    font-size: 12px;
+    color: black;
+    display: block;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.logoR {
+    text-decoration: none;
+}
+
+.logoR:hover .pR {
+    color: #DEBE5F;
+}
+
+.logoR:hover .edR {
+    color: #DEBE5F;
+}
+
+.logoR:hover .cifraoR {
+    color: #DEBE5F;
+}
+
+h1{
+    margin-top: 20px;    
+}
+
+.dados{
+    color:#DEBE5F
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #DEBE5F;
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------FOOTER-----------------------------------------------*/
+
+.footer {
+    margin-top: 550px;
+    border-top: 5px solid black;
+    color: black;
+    padding: 25px;
+    text-align: center;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------Resolução para telas acima de 1000px-----------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+@media screen and (min-width: 1000px) {
+    .containerPc {
+        flex-direction: row;
+        margin: auto;
+    }
+
+    /*-----------------------------------------------HEADER-----------------------------------------------*/
+
+    .navbar {
+        width: 1000px;
+    }
+
+    .nav-item a {
+        padding: 10px 15px;
+    }
+
+    .footer {
+        margin-top: 640px;       
+    }
+    
+}
